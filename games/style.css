@@ -1,0 +1,135 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 10px;
+	border: 1px solid gray;
+	padding: 5px
+}
+
+nav {
+	margin-top: 10px;
+	margin-bottom: 35px;
+	border: 1px solid black;
+}
+
+nav ul {
+	list-style: none;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+nav li {
+	width: 100%;
+	padding-top: 5px;
+}
+
+nav button {
+	text-align: center;
+	background-color: black;
+	width: 100%;
+	display: block;
+	padding: 10px;
+
+	text-decoration: none;
+	color: white;
+}
+
+ul.images_box{
+	list-style: none;
+	padding: 0;
+	
+}
+
+ul.images_box li{
+	margin: auto;
+	border: solid;
+	width:60px;
+}
+
+ul.images_box li input{
+	width:100%;
+	height:100%;
+}
+
+button:hover {
+	color: white;
+}
+
+main section {
+	margin: 10px;
+}
+
+footer {
+	margin-top: 15px;
+	text-align: center;
+}
+
+nav button.active {
+	background-color: white;
+	color: black;
+	border:1px solid;
+}
+
+#registrationForm .form-row {
+	margin: 25px;
+}
+
+#registrationForm .form-row#r8 {
+	margin-top: 35px;
+	margin-left: 0px;
+}
+
+.highlight {
+	border: solid red;
+}
+
+section h3 {
+	margin-top: 50px;
+	margin-bottom:0px;
+}
+
+@media screen and (min-width: 40em) {
+	nav ul {
+	display: flex;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	}
+  
+	nav li {
+		flex: 1 1 0;
+		padding: 5px;
+	}
+	
+	nav button {
+		text-align: center;
+		padding: 5px;
+		margin: 0;
+		background-color: black;
+		display: block;
+		height: 100%;
+		width: 100%;
+		text-decoration: none;
+		color: white;
+	}
+	
+	ul.images_box{
+		display: flex;
+	}
+
+	#registrationForm {
+		display:grid;
+		width:100%;
+		grid-template-columns: 50% 50%;
+	}
+	
+	#registrationForm #r8{
+    grid-column: 1 / -1;
+}
+	
+}
